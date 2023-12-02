@@ -14,10 +14,10 @@ class Song:
         Song.count += 1
 
         Song.artists.append(artist)
-        Song.artist_count = {artist: Song.artists.count(artist) for artist in set(Song.artists)}
+        Song.artist_count = {artist: Song.artists.count(artist) for artist in Song.artists}
 
         Song.genres.append(genre)
-        Song.genre_count = {genre: Song.genres.count(genre) for genre in set(Song.genres)}
+        Song.genre_count = {genre: Song.genres.count(genre) for genre in Song.genres}
 
 
 
